@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>holberton smiling - courses</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header class="courses-header">
+		<div class="container">
+			<nav class="navbar navbar-expand-sm">
+				<button class="navbar-toggler mt-3" type="button" data-toggle="collapse" data-target="#navbar-menu"
+					aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="holberton-icon text-white"></span>
+				</button>
+				<a href="#" class="navbar-brand text-center d-sm-none mx-auto">
+					<img src="images/smile_off.png" alt="Logo-smile" class="logo-smile ml-n5 my-3" width="30px"
+						height="23px">
+					<img src="images/logo.png" alt="Logo" class="logo" width="115" height="30">
+				</a>
+				<a href="#" class="navbar-brand d-none d-sm-block">
+					<img src="images/smile_off.png" alt="Logo-smile" class="m-3" width="37px" height="30px">
+					<img src="images/logo.png" alt="Logo" width="115px" height="30px">
+				</a>
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<div class="navbar-nav d-sm-none">
+						<div class="d-sm-none mx-auto mt-3">
+							<a href="courses.html" class="nav-link text-white text-center">COURSES</a>
+							<a href="pricing.html" class="nav-link text-white text-center">PRICING</a>
+							<a href="#login" class="nav-link text-white text-center">LOGIN</a>
+						</div>
+					</div>
+				</div>
+				<div class="d-none d-sm-block ml-auto">
+					<div class="navbar-nav">
+						<a href="courses.html" class="nav-link text-white mr-3">COURSES</a>
+						<a href="pricing.html" class="nav-link text-white mr-3">PRICING</a>
+						<a href="#login" class="nav-link text-white ">LOGIN</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<section>
+			<div class="container text-center my-5 py-5">
+				<h1 class="pricing-page-title text-center py-5 mx-auto d-none d-sm-block text-white">
+                    « Don’t cry because it’s over.<br><span class="purple">Smile</span> because it happened. »
+                </h1>
+			</div>
+		</section>
+		<div class="search-filters pt-0 pb-4 text-white">
+			<div class="container-md row mx-auto">
+				<div class="col-12 col-md-4 mt-3">
+					<label for="user_search" class="mb-2">KEYWORDS</label>
+					<input type="text" class="form-control mx-auto border-0 rounded-0 search-element" id="user_search" placeholder="Search by keywords" aria-label="user_search" aria-describedby="basic-addon1">
+					<i class="holberton_school-icon-search_2 input-icon"></i>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 mt-3">
+					<label class="mb-2">TOPIC</label>
+					<div class="dropdown">
+						<button class="btn btn-secondary border-0 rounded-0 search-element w-100 text-left" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Novice
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+						<button class="dropdown-item" type="button">Novice</button>
+						<button class="dropdown-item" type="button">Intermediate</button>
+						<button class="dropdown-item" type="button">Expert</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 mt-3">
+					<label class="mb-2">SORT BY</label>
+					<div class="dropdown">
+						<button class="btn btn-secondary border-0 rounded-0 search-element w-100 text-left" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Most Popular
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+						<button class="dropdown-item" type="button">Most Popular</button>
+						<button class="dropdown-item" type="button">Most Recent</button>
+						<button class="dropdown-item" type="button">Most Viewed</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="results-section py-5">
+		<div class="container-md">
+			<div class="mb-5 text-secondary ml-3">11 videos</div>
+			<div class="d-flex flex-wrap">
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center col-12 col-sm-4 col-md-3 mb-5">
+					<div class="carousel-item active">
+						<img class="w-100" src="./images/thumbnail_1.jpg" alt="smile image">
+						<div class="mx-3">
+							<div class="font-weight-bold text-dark text-left mt-3">
+								Diagonal Smile
+							</div>
+							<div class="text-secondary text-left mt-3 mb-3">
+								Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+							</div>
+							<div class="d-flex align-items-center mb-3">
+								<img src="./images/profile_1.jpg" class="rounded-circle mr-3 video-carousel-img-profile" alt="profile image" height="30px" width="30px">
+								<div class="purple-text font-weight-bold">Phillip massey</div>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="d-flex pt-1">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_on.png" class="mr-1 stars-size" alt="star icon filled in purple">
+									<img src="./images/star_off.png" class="stars-size" alt="star icon filled in grey">
+								</div>
+								<div class="purple-text font-weight-bold">
+									8 min
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer style="background-color: #071629; height: 200px;">
+		<div class="row container-md px-4 mx-auto">
+			<div class="logo-container col-12 col-sm-6 mt-5 align-items-center">
+				<img src="./images/smile_off.png" alt="smile image">
+				<img src="./images/logo.png" alt="holberton logo">
+			</div>
+			<div class="social-media-icons col-12 col-sm-6 mt-5 mt-sm-0">
+				<div class="text-center d-flex mx-auto ml-sm-auto mr-sm-0">
+					<i class="holberton_school-icon-ic_facebook"></i>
+					<i class="holberton_school-icon-ic_twitter"></i>
+					<i class="holberton_school-icon-ic_instagram"></i>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center text-white">
+			©smileschool 2020
+		</div>
+	</footer>
+</body>
+
+</html>
